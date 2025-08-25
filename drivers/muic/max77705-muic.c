@@ -916,7 +916,7 @@ static ssize_t max77705_muic_set_afc_disable(struct device *dev,
 
 		pdata->afc_disable = curr_val;
 
-		return -EIO;
+		return count;
 	} else {
 		pr_info("%s:%s afc_disable:%d (AFC %s)\n", MUIC_DEV_NAME, __func__,
 			pdata->afc_disable, pdata->afc_disable ? "Disabled" : "Enabled");
