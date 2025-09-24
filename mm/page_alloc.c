@@ -4699,7 +4699,6 @@ restart:
 
 retry:
 	retry_loop_count++;
-
 	/*
 	 * Deal with possible cpuset update races or zonelist updates to avoid
 	 * infinite retries.
